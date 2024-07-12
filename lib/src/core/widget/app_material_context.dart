@@ -1,5 +1,6 @@
 import 'package:eduflix_mobile_test/src/core/routes/app_route_name.dart';
 import 'package:eduflix_mobile_test/src/core/routes/app_router.dart';
+import 'package:eduflix_mobile_test/src/core/routes/go_route_system.dart';
 import 'package:flutter/material.dart';
 
 class AppMaterialContext extends StatelessWidget {
@@ -7,11 +8,10 @@ class AppMaterialContext extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Builder(
-        builder: (context) => MaterialApp(
+        builder: (context) => MaterialApp.router(
           debugShowCheckedModeBanner: false,
           title: 'Audio Book',
-          initialRoute: AppRouteName.onBoardingPage,
-          onGenerateRoute: AppRouter().onGenerateRoute,
+          routerConfig: GoRouterApp.router,
           builder: (context, child) => MediaQuery(
             data: MediaQuery.of(context)
                 .copyWith(textScaler: TextScaler.noScaling),

@@ -11,6 +11,7 @@ sealed class AppColors {
   static const green = Color(0xFF03c04a);
 
   /// every color
+  static const cF1511B = Color(0xFFF1511B);
   static const cFADF6F = Color(0xFFFADF6F);
   static const c00C2CB = Color(0xFF00C2CB);
   static const c343A45 = Color(0xFF343A45);

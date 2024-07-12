@@ -1,7 +1,7 @@
 import 'package:eduflix_mobile_test/src/core/style/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+@immutable
 final class AppTextStyle extends TextTheme {
   const AppTextStyle();
 
@@ -251,6 +251,8 @@ final class AppTextStyle extends TextTheme {
 final class FontSize {
   const FontSize._();
 
+  static double size5 = 5.sp;
+  static double size7 = 7.sp;
   static double size10 = 10.sp;
   static double size11 = 11.sp;
   static double size12 = 12.sp;

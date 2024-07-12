@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   static void run() => runApp(const ProviderScope(child: App()));
   @override
   Widget build(BuildContext context) => ScreenUtilInit(
-        designSize: const Size(360, 800),
+        designSize: const Size(430, 932),
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (_, child) => const AppMaterialContext(),

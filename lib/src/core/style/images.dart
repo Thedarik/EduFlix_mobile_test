@@ -13,6 +13,43 @@ sealed class AppImages {
     width: 321.w,
     fit: BoxFit.cover,
   );
+
+  static final appleShadow = SvgPicture.asset(
+    'assets/icons/apple_shadow.svg',
+    height: 98.27.h,
+    width: 86.71.w,
+    fit: BoxFit.cover,
+  );
+
+  static final laptop= SvgPicture.asset(
+    'assets/icons/it_software.svg',
+    height: 20.h,
+    width: 20.w,
+    fit: BoxFit.cover,
+  );
+
+  static final windows = SvgPicture.asset(
+    'assets/icons/windows.svg',
+    height: 94.45.h,
+    width: 95.45.w,
+    fit: BoxFit.cover,
+  );
+
+  static final starIcon = SvgPicture.asset(
+    'assets/icons/star_icon.svg',
+    height: 10.h,
+    width: 10.w,
+    fit: BoxFit.cover,
+  );
+
+  static final searchIcon = SvgPicture.asset(
+    'assets/icons/search_icon.svg',
+    height: 14.h,
+    width: 14.w,
+    fit: BoxFit.cover,
+  );
+
+
   static final onBoardingLogo = SvgPicture.asset(
     'assets/icons/eduflixLogo.svg',
     height: 300.h,
