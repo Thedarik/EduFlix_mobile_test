@@ -4,6 +4,8 @@ import 'package:eduflix_mobile_test/src/core/style/text_style.dart';
 import 'package:eduflix_mobile_test/src/feature/auth/view/pages/sign_up_page.dart';
 import 'package:eduflix_mobile_test/src/feature/auth/view/widgets/c_w_ga.dart';
 import 'package:eduflix_mobile_test/src/feature/auth/view/widgets/line_widgets.dart';
+import 'package:eduflix_mobile_test/src/feature/home/view/pages/homa_page.dart';
+import 'package:eduflix_mobile_test/src/feature/home/view/pages/main_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -42,7 +44,7 @@ class OnboardingPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SignUpPage(),
+                        builder: (context) => const MainPage(),
                       ),
                     );
                   },

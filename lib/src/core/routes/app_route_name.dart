@@ -10,4 +10,5 @@ final class AppRouteName {
   static const String learningPage = '/learningPage';
   static const String certificatePage = '/certificatePage';
 
+  static const String homePage = '/homePage';
 }
