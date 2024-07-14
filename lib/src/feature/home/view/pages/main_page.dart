@@ -35,27 +35,41 @@ class _MainPageState extends State<MainPage> {
           index = value;
           setState(() {});
         },
+        
         showUnselectedLabels: true,
+        currentIndex: index,
+        unselectedItemColor: const Color(0xFF666666),
+        selectedItemColor: Colors.yellow,
         items: [
           BottomNavigationBarItem(
-              backgroundColor: Colors.black,
-              icon: index == 0 ? SvgPicture.asset("assets/icons/home.svg") : SvgPicture.asset("assets/icons/default_home.svg"),
-              label: index != 0 ? "Home" : "."),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset("assets/icons/course.svg"),
-            label: "Course",
+            backgroundColor: Colors.black,
+            icon: index == 0 ? SvgPicture.asset("assets/icons/home.svg") : SvgPicture.asset("assets/icons/default_home.svg"),
+            label: index != 0 ? "Home" : ".",
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset("assets/icons/learing.svg"),
-            label: "Learning",
+            backgroundColor: Colors.black,
+            icon: index == 1 ? SvgPicture.asset("assets/icons/selected_cours.svg") : SvgPicture.asset("assets/icons/course.svg"),
+            label: index != 1 ? "Course" : ".",
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset("assets/icons/bokk.svg"),
-            label: "Certificate",
+            backgroundColor: Colors.black,
+            icon: index == 2 ? SvgPicture.asset("assets/icons/selected+learning.svg") : SvgPicture.asset("assets/icons/learing.svg"),
+            label: index != 2 ? "Learning" : ".",
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset("assets/icons/profile.svg"),
-            label: "Profile",
+            backgroundColor: Colors.black,
+            icon: index == 3 ? SvgPicture.asset("assets/icons/selectedbook.svg") : SvgPicture.asset("assets/icons/bokk.svg"),
+            label: index != 3 ? "Certificate" : ".",
+          ),
+          BottomNavigationBarItem(
+            backgroundColor: Colors.black,
+            icon: index == 4
+                ? SvgPicture.asset("assets/icons/user.svg")
+                : const Icon(
+                    Icons.person,
+                    color: Color(0xFF545454),
+                  ),
+            label: index != 4 ? "Profile" : ".",
           ),
         ],
       ),
