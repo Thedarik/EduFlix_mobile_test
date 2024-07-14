@@ -8,7 +8,7 @@ import 'package:go_router/go_router.dart';
 final class GoRouterApp {
   static GoRouter router = GoRouter(initialLocation: AppRouteName.onBoardingPage, routes: [
     GoRoute(path: AppRouteName.coursePage, builder: (context, state) => CoursePage()),
-    GoRoute(path: AppRouteName.onBoardingPage, builder: (context, state) => OnboardingPage()),
+    GoRoute(path: AppRouteName.onBoardingPage, builder: (context, state) => const OnboardingPage()),
     GoRoute(path: AppRouteName.learningPage, builder: (context, state) => const LearningPage()),
     GoRoute(path: AppRouteName.certificatePage, builder: (context, state) => const CertificatePage())
   ]);

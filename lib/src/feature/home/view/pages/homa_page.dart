@@ -45,7 +45,7 @@ class HomaPage extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 15, right: 27),
+              padding: const EdgeInsets.only(left: 15, right: 27),
               child: SizedBox(
                 width: double.infinity,
                 height: 48,
@@ -74,14 +74,14 @@ class HomaPage extends StatelessWidget {
                       SvgPicture.asset("assets/icons/censel.svg"),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(Icons.close, color: Colors.white),
+                        icon: const Icon(Icons.close, color: Colors.white),
                       ),
                     ],
                   ),
                 ),
               ),
             ),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             SizedBox(
               height: 131,
               width: double.infinity, // Balandlikni o'rnating
@@ -119,7 +119,7 @@ class HomaPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 4),
+            const SizedBox(height: 4),
             const Padding(
               padding: EdgeInsets.only(left: 17),
               child: SizedBox(
@@ -132,7 +132,7 @@ class HomaPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 9),
+            const SizedBox(height: 9),
             SizedBox(
               height: 110,
               width: double.infinity,
@@ -156,7 +156,7 @@ class HomaPage extends StatelessWidget {
                               child: SvgPicture.asset("assets/icons/userprofil.svg"),
                             ),
                           ),
-                          Text(
+                          const Text(
                             "Asadbek",
                             style: TextStyle(color: Colors.white),
                           ),
@@ -167,16 +167,16 @@ class HomaPage extends StatelessWidget {
                 },
               ),
             ),
-            SizedBox(height: 19),
+            const SizedBox(height: 19),
             Padding(
-              padding: EdgeInsets.only(left: 3, right: 10),
+              padding: const EdgeInsets.only(left: 3, right: 10),
               child: SizedBox(
                 height: 79,
                 width: double.infinity,
                 child: DecoratedBox(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Color(0xFF1D1D1D),
+                    color: const Color(0xFF1D1D1D),
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -199,7 +199,7 @@ class HomaPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 21),
+            const SizedBox(height: 21),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: GridView.builder(

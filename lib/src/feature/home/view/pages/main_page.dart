@@ -1,8 +1,8 @@
-import 'package:eduflix_mobile_test/src/feature/home/view/pages/certificate_page.dart';
-import 'package:eduflix_mobile_test/src/feature/home/view/pages/course_page.dart';
+import 'package:eduflix_mobile_test/src/feature/certificate/view/pages/certificate_page.dart';
+import 'package:eduflix_mobile_test/src/feature/course/view/pages/course_page.dart';
 import 'package:eduflix_mobile_test/src/feature/home/view/pages/homa_page.dart';
-import 'package:eduflix_mobile_test/src/feature/home/view/pages/learning_page.dart';
 import 'package:eduflix_mobile_test/src/feature/home/view/pages/profile_page.dart';
+import 'package:eduflix_mobile_test/src/feature/learning/view/pages/learning_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -16,12 +16,12 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int index = 0;
 
-  List<Widget> lits = const [
-    HomaPage(),
+  List<Widget> lits = [
+    const HomaPage(),
     CoursePage(),
-    LearningPage(),
-    CertificatePage(),
-    ProfilePage(),
+    const LearningPage(),
+    const CertificatePage(),
+    const ProfilePage(),
   ];
 
   @override
@@ -40,14 +40,23 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(
               backgroundColor: Colors.black,
               icon: index == 0 ? SvgPicture.asset("assets/icons/home.svg") : SvgPicture.asset("assets/icons/default_home.svg"),
-              label: index != 0 ? "home" : "."),
+              label: index != 0 ? "Home" : "."),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "home",
+            icon: SvgPicture.asset("assets/icons/course.svg"),
+            label: "Course",
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset("assets/icons/learing.svg"),
+            label: "Learning",
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset("assets/icons/bokk.svg"),
+            label: "Certificate",
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset("assets/icons/profile.svg"),
+            label: "Profile",
+          ),
         ],
       ),
     );

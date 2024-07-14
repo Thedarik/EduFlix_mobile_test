@@ -1,5 +1,3 @@
-import 'package:eduflix_mobile_test/src/core/routes/app_route_name.dart';
-import 'package:eduflix_mobile_test/src/core/routes/app_router.dart';
 import 'package:eduflix_mobile_test/src/core/routes/go_route_system.dart';
 import 'package:flutter/material.dart';
 
